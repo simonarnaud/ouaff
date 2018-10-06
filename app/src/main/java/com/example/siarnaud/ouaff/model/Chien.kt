@@ -3,16 +3,16 @@ package com.example.siarnaud.ouaff.model
 import android.provider.Contacts
 import android.widget.DatePicker
 
-class Chien(dogName: String, dogGender: Gender, dogWeigth: Int, dogAggressivity: Int) {
+class Chien(dogName: String, dogGender: String, dogWeigth: Int, dogAggressivity: Int, dogRace: String?, dogOwner: String?, dogEntry: String?) {
 
     var dogName: String = dogName
-    var dogGender: Gender = dogGender
-    var dogWeigth = dogWeigth
-    var dogAggressivity = dogAggressivity
+    var dogGender: String = dogGender
+    var dogWeigth: Int = dogWeigth
+    var dogAggressivity: Int = dogAggressivity
 
-    lateinit var dogRace: String
-    lateinit var dogOwner: Contacts
-    lateinit var dogEntry: DatePicker
+    var dogRace: String? = dogRace
+    var dogOwner: String? = dogOwner
+    var dogEntry: String? = dogEntry
 
-
+    var dogId: Long = -1
 }
