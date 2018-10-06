@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        />
 
     <EditText
         android:id="@+id/identityRace"
@@ -81,31 +89,6 @@
         android:layout_marginBottom="187dp"
         android:text="Agressivité" />
 
-    <ImageButton
-        android:id="@+id/starTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/starOne"
-        android:layout_toEndOf="@+id/starOne"
-        app:srcCompat="@android:drawable/btn_star" />
-
-    <ImageButton
-        android:id="@+id/starThree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/starTwo"
-        android:layout_toEndOf="@+id/starTwo"
-        app:srcCompat="@android:drawable/btn_star" />
-
-    <ImageButton
-        android:id="@+id/starOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="168dp"
-        android:layout_toEndOf="@+id/agressivite"
-        app:srcCompat="@android:drawable/btn_star" />
-
     <TextView
         android:id="@+id/divers"
         android:layout_width="wrap_content"
@@ -134,5 +117,14 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Date" />
+
+    <RatingBar
+        android:id="@+id/stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/identityRace"
+        android:layout_marginBottom="155dp"
+        android:numStars="3" />
 
 </RelativeLayout>

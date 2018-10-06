@@ -6,12 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <fragment
         android:id="@+id/fragment"
         android:name="com.example.siarnaud.ouaff.Detail"
-        android:layout_width="383dp"
-        android:layout_height="516dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/my_toolbar"
+        tools:layout_editor_absoluteY="-1dp" />
 </android.support.constraint.ConstraintLayout>
