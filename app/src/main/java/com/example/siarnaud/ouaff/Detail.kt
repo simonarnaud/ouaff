@@ -73,7 +73,7 @@ class Detail : Fragment() {
 
         val sb = StringBuilder()
 
-        
+        // a finir
 
     }
 }
