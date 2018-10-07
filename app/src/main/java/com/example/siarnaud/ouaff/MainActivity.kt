@@ -9,6 +9,7 @@ import android.widget.Spinner
 import com.example.siarnaud.ouaff.database.DogDataSource
 import com.example.siarnaud.ouaff.model.Chien
 import com.example.siarnaud.ouaff.model.Gender
+import kotlinx.android.synthetic.main.fragment_add_dog.*
 import java.util.*
 
 
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         var chien = Chien("test",Gender.FEMALE.toString(),31,1, null, null, null)
 
         val dataSource: DogDataSource = DogDataSource(this)
+
+        setSupportActionBar(my_toolbar)
 
         dataSource.open()
        // dataSource.createDog("test","race",Gender.FEMALE.toString(),31,1, null, null)

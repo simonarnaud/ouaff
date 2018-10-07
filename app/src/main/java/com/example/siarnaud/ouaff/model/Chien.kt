@@ -1,8 +1,5 @@
 package com.example.siarnaud.ouaff.model
 
-import android.provider.Contacts
-import android.widget.DatePicker
-
 class Chien(dogName: String, dogGender: String, dogWeigth: Int, dogAggressivity: Int, dogRace: String?, dogOwner: String?, dogEntry: String?) {
 
     var dogName: String = dogName

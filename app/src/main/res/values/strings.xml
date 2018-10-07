@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Ouaff</string>
+    <string name="identityFrench">Identité</string>
+    <string name="nameFrench">Nom</string>
+    <string name="race">Race</string>
+    <string name="genderFrench">Genre</string>
+    <string name="mesure">Mesure</string>
+    <string name="weigthFrench">Poids</string>
+    <string name="kg">kg</string>
+    <string name="agressivityFrench">Agressivité</string>
+    <string name="variousFrench">Divers</string>
+    <string name="ownerFrench">Propriétaire</string>
+    <string name="date">Date</string>
+    <string name="doneImage">done</string>
 </resources>
